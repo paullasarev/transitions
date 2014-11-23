@@ -127,7 +127,7 @@ pre[class*="language-"] {
 h2.header {
   margin-bottom: 40px;
 }
-.list li {
+ul.list li {
   text-align: left;
   font-size: 30px;
 }

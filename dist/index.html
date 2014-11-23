@@ -14,20 +14,47 @@
       </section>
       <section>
         <h2 class="header">What we are talking about?</h2>
-        <div class="list">
-          <li><a href="http://www.w3schools.com/css/css3_transitions.asp">transition&nbsp</a>property</li>
-          <li><b>animation</b> property</li>
-          <li><b>keyframe</b> property</li>
-          <li><b>transform</b> property</li>
-        </div>
+        <ul class="list">
+          <li><a href="http://www.w3schools.com/css/css3_transitions.asp">transition</a> property</li>
+          <li><a href="http://www.w3schools.com/css/css3_animations.asp">animation</a> property</li>
+          <li><a href="http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp">keyframes</a> property</li>
+          <li><a href="http://www.w3schools.com/cssref/css3_pr_transform.asp">transform</a> property</li>
+        </ul>
       </section>
       <section>
-        <h2>Touch Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a></h3>
+        <h2>Transition</h2>
+        <pre><code class="language-css">div {
+  transition: all 0.5s ease;
+  background: red;
+  padding: 10px;
+}
+div:hover {
+  background: green;
+  padding: 20px;
+}
+</code></pre>
       </section>
       <section>
-        <h2>Responsive Slides</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a></h3>
+        <h2>Transition</h2>
+        <iframe width="100%" height="100%" src="http://jsfiddle.net/kecedon3/2/embedded/css,result,html/presentation" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+      </section>
+      <section>
+        <h2>Transition</h2>
+        <iframe width="100%" height="100%" src="http://jsfiddle.net/kecedon3/3/embedded/css,result,html/presentation" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+      </section>
+      <section>
+        <h2>Transition parameters</h2>
+        <pre><code class="language-css">.example {
+  transition: 
+    [transition-property:name[,...]|all|none] 
+    [transition-duration:1s|0.5s|100ms] 
+    [transition-timing-function:
+      ease|linear|cubic-bezier|steps
+      |ease-in|ease-out|ease-in-out
+      |step-start|step-end]
+    [transition-delay:-1s|1s|0.5s|100ms];
+}
+</code></pre>
       </section>
       <section>
         <h2>Bullet List</h2>
