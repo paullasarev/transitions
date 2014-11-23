@@ -1,0 +1,8 @@
+{
+  "name": "presentation-css3-dynamic-effects",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages",
+    "bespoke-loop": "~1.0.0"
+  }
+}
