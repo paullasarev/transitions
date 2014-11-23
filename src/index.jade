@@ -17,21 +17,48 @@ html
 
       section
         h2.header What we are talking about?
-        .list
-          li 
-            a(href='http://www.w3schools.com/css/css3_transitions.asp') transition&nbsp
-            | property
-          li <b>animation</b> property
-          li <b>keyframe</b> property
-          li <b>transform</b> property
+        ul.list
+          li: #[a(href='http://www.w3schools.com/css/css3_transitions.asp') transition] property
+          li: #[a(href='http://www.w3schools.com/css/css3_animations.asp') animation] property
+          li: #[a(href='http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp') keyframes] property
+          li: #[a(href='http://www.w3schools.com/cssref/css3_pr_transform.asp') transform] property
 
       section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+        h2 Transition
+        pre
+          code.language-css.
+            div {
+              transition: all 0.5s ease;
+              background: red;
+              padding: 10px;
+            }
+            div:hover {
+              background: green;
+              padding: 20px;
+            }
 
       section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+        h2 Transition
+        iframe(width="100%" height="100%" src="http://jsfiddle.net/kecedon3/2/embedded/css,result,html/presentation" allowfullscreen="allowfullscreen" frameborder="0")
+
+      section
+        h2 Transition
+        iframe(width="100%" height="100%" src="http://jsfiddle.net/kecedon3/3/embedded/css,result,html/presentation" allowfullscreen="allowfullscreen" frameborder="0")
+
+      section
+        h2 Transition parameters
+        pre
+          code.language-css.
+            .example {
+              transition: 
+                [transition-property:name[,...]|all|none] 
+                [transition-duration:1s|0.5s|100ms] 
+                [transition-timing-function:
+                  ease|linear|cubic-bezier|steps
+                  |ease-in|ease-out|ease-in-out
+                  |step-start|step-end]
+                [transition-delay:-1s|1s|0.5s|100ms];
+            }
 
       section
         h2 Bullet List
