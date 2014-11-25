@@ -20,7 +20,7 @@ html
         ul.list
           li: #[a(href='http://www.w3schools.com/css/css3_transitions.asp') transition] property
           li: #[a(href='http://www.w3schools.com/css/css3_animations.asp') animation] property
-          li: #[a(href='http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp') keyframes] property
+          li: #[a(href='http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp') @keyframes] property
           li: #[a(href='http://www.w3schools.com/cssref/css3_pr_transform.asp') transform] property
 
       section
@@ -73,6 +73,22 @@ html
 
       section
         h1 Animation
+
+
+      section
+        h2 animation
+        pre
+          code.language-css.
+            div {
+              -webkit-animation: movie 5s infinite;
+            }
+            @-webkit-keyframes movie {
+                0%   {top: 0; left:0}
+                25%  {top: 0px; left:600px;}
+                50%  {top: 200px; left:600px;}
+                75%  {top: 200px; left:0px;}
+                100% {top: 0; left:0}
+            }
 
       section
         h2 animation
