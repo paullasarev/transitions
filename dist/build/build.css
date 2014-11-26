@@ -124,10 +124,20 @@ pre[class*="language-"] {
 .bespoke-scale-parent .bespoke-active {
   pointer-events: auto;
 }
-h2.header {
+.bespoke-slide {
+  padding: 20px;
+}
+h2 .header {
   margin-bottom: 40px;
+}
+ul.list {
+  list-style-type: disc;
 }
 ul.list li {
   text-align: left;
   font-size: 30px;
+}
+iframe {
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
