@@ -39,7 +39,7 @@ module.exports = function(options) {
         }
       }
 
-      $('iframe').on('mousewheel wheel', function(e){
+      $('iframe,pre').on('mousewheel wheel', function(e){
         e.stopPropagation();
       });
     }
