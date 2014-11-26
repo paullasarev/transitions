@@ -1,3 +1,4 @@
+var $ = require('jquery');
 module.exports = function(options) {
   return function(deck) {
     // var isClick = options === true || options == 'click';
@@ -37,6 +38,10 @@ module.exports = function(options) {
             deck.prev();
         }
       }
+
+      $('iframe').on('mousewheel wheel', function(e){
+        e.stopPropagation();
+      });
     }
   };
 };
